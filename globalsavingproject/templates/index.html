@@ -1,0 +1,913 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<!--&lt;!&ndash;==================================================&ndash;&gt;-->
+<!--&lt;!&ndash; Start Header Area &ndash;&gt;-->
+<!--&lt;!&ndash;==================================================&ndash;&gt;-->
+<!--<header class="header-area" id="sticky-header">-->
+<!--    <div class="container">-->
+<!--        <div class="row align-items-center">-->
+<!--            <div class="col-lg-2">-->
+<!--                <div class="logo" style="padding: 25px; margin-left: 0px;">-->
+<!--                    <a href="#"><img src="{% static 'images/llogo.png' %}" alt="" style="width: 100%;"></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-10">-->
+<!--                <div class="header-menu">-->
+<!--                    <ul>-->
+<!--                        <li class="w-15 p-3" style="background-color: #eee;"><a href="#">Home <i class=""></i></a>-->
+<!--                        </li>-->
+
+<!--                        <li><a href="#">About Us <i class="bi bi-caret-down-fill"></i></a>-->
+<!--                            <div class="sub-menu">-->
+<!--                                <ul>-->
+
+<!--                                    <li><a href="#">Our History</a></li>-->
+<!--                                    <li><a href="#">Our Core Values</a></li>-->
+<!--                                    <li><a href="#">Leadership</a></li>-->
+
+<!--                                    <li><a href="#">Subsidiaries <i class="fas fa-caret-down"></i></a>-->
+<!--                                        <div class="sub-menu-a">-->
+<!--                                            <ul>-->
+<!--                                                <li><a href="#">Global Life Pension Scheme</a></li>-->
+<!--                                                <li><a href="#">Global Life Health</a></li>-->
+<!--                                                <li><a href="#">Global Life Real Estate</a></li>-->
+<!--                                                <li><a href="#">Global Life Asset Management</a></li>-->
+<!--                                                <li><a href="#">Global Life Micro Finance</a></li>-->
+<!--                                            </ul>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+
+<!--                                    <li><a href="#">Career <i class="fas fa-caret-down"></i></a>-->
+<!--                                        <div class="sub-menu-a">-->
+<!--                                            <ul>-->
+<!--                                                <li><a href="#">Our Culture</a></li>-->
+<!--                                                <li><a href="#">Vacancies</a></li>-->
+<!--                                                <li><a href="#">Apply Now</a></li>-->
+<!--                                            </ul>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+
+<!--                                    <li><a href="#">Resource Center</a></li>-->
+<!--                                    <li><a href="#">Media</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li><a href="#">Our Product <i class="bi bi-caret-down-fill""></i></a>-->
+<!--                            <div class="sub-menu">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="#">Members Coverage</a></li>-->
+<!--                                    <li><a href="#">Business Coverage</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </li>-->
+
+<!--                        <li><a href="#">Customer Service <i class="bi bi-caret-down-fill""></i></a>-->
+<!--                            <div class="sub-menu">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="#">Sample product 1</a></li>-->
+<!--                                    <li><a href="#">Sample product 2</a></li>-->
+<!--                                    <li><a href="#">Sample product 3</a></li>-->
+<!--                                    <li><a href="#">Sample product 4</a></li>-->
+<!--                                    <li><a href="#">Sample product 5</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li><a href="#">Connect with us <i class="bi bi-caret-down-fill"></i></a>-->
+<!--                            <div class="sub-menu">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="#">Sample product 1</a></li>-->
+<!--                                    <li><a href="#">Sample product 2</a></li>-->
+<!--                                    <li><a href="#">Sample product 3</a></li>-->
+<!--                                    <li><a href="#">Sample product 4</a></li>-->
+<!--                                    <li><a href="#">Sample product 5</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li><a href="#">Investors Relation <i class="bi bi-caret-down-fill""></i></a>-->
+<!--                            <div class="sub-menu">-->
+<!--                                <ul>-->
+<!--                                    <li><a href="#">Sample product 3</a></li>-->
+<!--                                    <li><a href="#">Sample product 4</a></li>-->
+<!--                                    <li><a href="#">Sample product 5</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </li>-->
+
+<!--                    </ul>-->
+<!--                    <div class="header-right">-->
+<!--                        <div class="header-search">-->
+<!--                            <a class="search-box-btn search-box-outer" href="#"><i class="bi bi-search"></i></a>-->
+<!--                        </div>-->
+<!--                        <div class="Lifesafe-btn">-->
+<!--                            <a href="/form">Get Started</a>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;							<div class="header-sidebar">&ndash;&gt;-->
+<!--                        &lt;!&ndash;								<a class="navSidebar-button" href="#"><i class="bi bi-grid-3x3-gap-fill"></i></a>&ndash;&gt;-->
+<!--                        &lt;!&ndash;							</div>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</header>-->
+
+
+<!--==================================================-->
+<!-- Start Banner Area -->
+<!--==================================================-->
+
+<section class="banner-section">
+    <div class="banner-carousel owl-carousel">
+        <div class="slide-item one">
+            <div class="image-layer" style="background-image: url('{% static 'images/slider/banner.jpg' %}');"></div>
+            <div class="container">
+                <div class="slider-content">
+                    <div class="slider-sub-title">
+                        <h4>Pension | Retirement | Insurance</h4>
+                    </div>
+                    <div class="slider-main-title">
+                        <h1>We Ensure The Best
+                            Pension Service</h1>
+                    </div>
+                    <div class="slider-discription">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+                    </div>
+                    <div class="Lifesafe-btn slider1">
+                        <a href="service-details.html">Discover More</a>
+                    </div>
+                    <div class="video-icon">
+                        <a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true"
+                           href="https://youtu.be/BS4TUd7FJSg"><i class="bi bi-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item two">
+            <div class="image-layer" style="background-image: url('{% static 'images/slider/banner.jpg' %}');"></div>
+            <div class="container">
+                <div class="slider-content">
+                    <div class="slider-sub-title">
+                        <h4>Pension | Retirement | Insurance</h4>
+                    </div>
+                    <div class="slider-main-title">
+                        <h1>We Ensure The Best
+                            Insurance Service</h1>
+                    </div>
+                    <div class="slider-discription">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+                    </div>
+                    <div class="Lifesafe-btn slider1">
+                        <a href="service-details.html">Discover More</a>
+                    </div>
+                    <div class="video-icon">
+                        <a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true"
+                           href="https://youtu.be/BS4TUd7FJSg"><i class="bi bi-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==================================================-->
+<!-- End Banner Area -->
+<!--==================================================-->
+
+
+<!--==================================================-->
+<!-- Start Feature Area -->
+<!--==================================================-->
+<div class="feature-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-single-box wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <div class="fetaure-icon">
+                        <img src="{% static 'images/service/feature-icon1.png' %}" alt="">
+                    </div>
+                    <div class="feature-content">
+                        <h4>Trusted Company</h4>
+                        <p>The trust then manages the policy
+                            and pays the premiums.</p>
+                    </div>
+                    <div class="feature-shape">
+                        <img src="{% static 'images/service/feature-one-shape-1.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-single-box wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+                    <div class="fetaure-icon">
+                        <img src="{% static 'images/service/feature-icon4.png' %}" alt="">
+                    </div>
+                    <div class="feature-content">
+                        <h4>Save your money</h4>
+                        <p>The trust then manages the policy
+                            and pays the premiums.</p>
+                    </div>
+                    <div class="feature-shape">
+                        <img src="{% static 'images/service/feature-one-shape-1.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-single-box wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+                    <div class="fetaure-icon">
+                        <img src="{% static 'images/service/feature-icon3.png' %}" alt="">
+                    </div>
+                    <div class="feature-content">
+                        <h4>Get a free quote</h4>
+                        <p>The trust then manages the policy
+                            and pays the premiums.</p>
+                    </div>
+                    <div class="feature-shape">
+                        <img src="{% static 'images/service/feature-one-shape-1.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-single-box wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="fetaure-icon">
+                        <img src="{% static 'images/service/feature-icon4.png' %}" alt="">
+                    </div>
+                    <div class="feature-content">
+                        <h4>24/7 Fast Support</h4>
+                        <p>The trust then manages the policy
+                            and pays the premiums.</p>
+                    </div>
+                    <div class="feature-shape">
+                        <img src="{% static 'images/service/feature-one-shape-1.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==================================================-->
+<!-- End Feature Area -->
+<!--==================================================-->
+
+<!--==================================================-->
+<!-- Start About Area -->
+<!--==================================================-->
+<div class="about-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                <div class="about-thumb wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="1s">
+                    <img src="{% static 'images/business/african-young-businessman-talking-mobile-phone-looking-digital-tablet-hold-by-his-colleague.jpg' %}"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="section-title wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <div class="section-sub-title">
+                        <h4>About Our Company</h4>
+                    </div>
+                    <div class="section-main-title about">
+                        <h2>Our Company Been Working
+                            Successfully For 20 Years</h2>
+                    </div>
+                </div>
+                <div class="about-discription wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                        viverra maecenas accumsan lacus vel facilisis. </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tab list-tab">
+                            <ul class="tabs active wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                                <li class="current"><a href="#">Our Mission</a></li>
+                                <li><a href="#">Our Vision</a></li>
+                                <li><a href="#">Our Goal</a></li>
+                            </ul>
+                            <div class="tab_content">
+                                <div class="tabs_item">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-12 col-sm-6">
+                                            <div class="about-thumb wow fadeInRight" data-wow-delay="0.2s"
+                                                 data-wow-duration="1s">
+                                                <img src="{% static 'images/business/black-man-black-suit-standing-cafe.jpg' %}"
+                                                     alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-12 col-sm-6">
+                                            <div class="about-list wow fadeInUp" data-wow-delay="0.4s"
+                                                 data-wow-duration="1s">
+                                                <ul>
+                                                    <li><i class="bi bi-chevron-double-right"></i> Your business
+                                                        deserves best software
+                                                    </li>
+                                                    <li><i class="bi bi-chevron-double-right"></i> Board Composition
+                                                    </li>
+                                                    <li><i class="bi bi-chevron-double-right"></i> Board Committees
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="about-bottom wow fadeInUp" data-wow-delay="0.6s"
+                                             data-wow-duration="1s">
+                                            <div class="Lifesafe-btn">
+                                                <a href="#">Track Your Claim</a>
+                                            </div>
+                                            <div class="about-us-icon">
+                                                <i class="bi bi-telephone-plus"></i>
+                                            </div>
+                                            <div class="about-us-phone">
+                                                <h5>Need Help? <span>+1 (470) 519 3488</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs_item" style="display: none;">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-12 col-sm-6">
+                                            <div class="about-thumb wow fadeInRight" data-wow-delay="0.2s"
+                                                 data-wow-duration="1s">
+                                                <img src="{% static 'images/about/about-thumb2.png' %}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-12 col-sm-6">
+                                            <div class="about-list wow fadeInUp" data-wow-delay="0.4s"
+                                                 data-wow-duration="1s">
+                                                <ul>
+                                                    <li><i class="bi bi-chevron-double-right"></i> Your business
+                                                        deserves best software
+                                                    </li>
+                                                    <li><i class="bi bi-chevron-double-right"></i> Board Composition
+                                                    </li>
+                                                    <li><i class="bi bi-chevron-double-right"></i> Board Committees
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="about-bottom wow fadeInUp" data-wow-delay="0.6s"
+                                             data-wow-duration="1s">
+                                            <div class="Lifesafe-btn">
+                                                <a href="#">Track Your Claim</a>
+                                            </div>
+                                            <div class="about-us-icon">
+                                                <i class="bi bi-telephone-plus"></i>
+                                            </div>
+                                            <div class="about-us-phone">
+                                                <h5>Need Help? <span>+1 (470) 519 3488</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs_item" style="display: none;">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-12 col-sm-6">
+                                            <div class="about-thumb wow fadeInRight" data-wow-delay="0.2s"
+                                                 data-wow-duration="1s">
+                                                <img src="{% static 'images/about/about-thumb2.png' %}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-12 col-sm-6">
+                                            <div class="about-list wow fadeInUp" data-wow-delay="0.4s"
+                                                 data-wow-duration="1s">
+                                                <ul>
+                                                    <li><i class="bi bi-chevron-double-right"></i> Your business
+                                                        deserves best software
+                                                    </li>
+                                                    <li><i class="bi bi-chevron-double-right"></i> Board Composition
+                                                    </li>
+                                                    <li><i class="bi bi-chevron-double-right"></i> Board Committees
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="about-bottom wow fadeInUp" data-wow-delay="0.6s"
+                                             data-wow-duration="1s">
+                                            <div class="Lifesafe-btn">
+                                                <a href="#">Track Your Claim</a>
+                                            </div>
+                                            <div class="about-us-icon">
+                                                <i class="bi bi-telephone-plus"></i>
+                                            </div>
+                                            <div class="about-us-phone">
+                                                <h5>Need Help? <span>+1 (470) 519 3488</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==================================================-->
+<!-- End About Area -->
+<!--==================================================-->
+
+
+<!--==================================================-->
+<!-- Start Service Area -->
+<!--==================================================-->
+<div class="service-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <div class="section-sub-title">
+                        <h4>Our Best Services</h4>
+                    </div>
+                    <div class="section-main-title">
+                        <h2>Amazing Insurance Services</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-single-box wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+                    <div class="service-thumb">
+                        <img src="{% static 'images/business/black-men-cafe-have-business.jpg' %}" alt="">
+                        <div class="service-icon">
+                            <img src="{% static 'images/service/service-icon1.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4><a href="service-details.html"> Family Insurance</a></h4>
+                        <p>The trust then manages the policy
+                            and pays the premiums.</p>
+                    </div>
+                    <div class="Lifesafe-btn service">
+                        <a href="#">Read More +</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-single-box wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+                    <div class="service-thumb">
+                        <img src="{% static 'images/business/business-women-talking-near-desk-coffee-break-hallway-big-corporation.jpg' %}"
+                             alt="">
+                        <div class="service-icon">
+                            <img src="{% static 'images/service/service-icon2.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4><a href="service-details.html"> Business Insurance</a></h4>
+                        <p>The trust then manages the policy
+                            and pays the premiums.</p>
+                    </div>
+                    <div class="Lifesafe-btn service">
+                        <a href="#">Read More +</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-single-box wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="service-thumb">
+                        <img src="{% static 'images/business/smiling-businessman-signing-contract.jpg' %}" alt="">
+                        <div class="service-icon">
+                            <img src="{% static 'images/service/service-icon3.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4><a href="service-details.html"> Trusted Company</a></h4>
+                        <p>The trust then manages the policy
+                            and pays the premiums.</p>
+                    </div>
+                    <div class="Lifesafe-btn service">
+                        <a href="#">Read More +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==================================================-->
+<!-- End Service Area -->
+<!--==================================================-->
+
+<!--==================================================-->
+<!-- Start Protection Area -->
+<!--==================================================-->
+<div class="protection-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 col-md-12">
+                <div class="protection-content">
+                    <h4>Where Protection Meets
+                        Convenience</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="Lifesafe-btn protection">
+                    <a href="#">Contact Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==================================================-->
+<!-- End Protection Area -->
+<!--==================================================-->
+
+<!--==================================================-->
+<!-- Start Choose Us Area -->
+<!--==================================================-->
+<div class="choose-us-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="section-title wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <div class="section-sub-title">
+                        <h4>Why Choose Us</h4>
+                    </div>
+                    <div class="section-main-title">
+                        <h2>Why You Should Choose Our
+                            Insurance Policy.</h2>
+                    </div>
+                    <div class="choose-discription">
+                        <p>Sit amet consectetur adipiscing elites varius montes, massa blandit orci.
+                            Sed egestas tellus est aliquet egetristique nisullam pharetra sed tempor sed eivera </p>
+                    </div>
+                </div>
+                <div class="row choose">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="choose-list wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+                            <span><i class="bi bi-chevron-double-right"></i> We provide awesome services</span>
+                            <span><i class="bi bi-chevron-double-right"></i> We provide awesome services</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="choose-list wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+                            <span><i class="bi bi-chevron-double-right"></i> We provide awesome services</span>
+                            <span><i class="bi bi-chevron-double-right"></i> We provide awesome services</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Lifesafe-btn choose wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <a href="#">Track Your Claim</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="choose-thumb-items">
+                    <div class="choose-thumb wow fadeInLeft" data-wow-delay="0.4s" data-wow-duration="1s">
+                        <img src="{% static 'images/business/elegant-black-man-office' %}" alt="">
+                    </div>
+                    <div class="choose-thumb wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+                        <img src="{% static 'images/business/businesswoman-talking-mobile-phone-standing-with-his-colleague-holding-clipboard' %}"
+                             alt="">
+                    </div>
+                    <div class="choose-thumb three">
+                        <img src="{% static 'images/business/portrait-smiling-young-woman-using-digital-tablet-front-office-building' %}"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==================================================-->
+<!-- End Choose Us Area -->
+<!--==================================================-->
+
+
+<!--==================================================-->
+<!-- Start Insurance Area -->
+<!--==================================================-->
+<div class="insurance-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <div class="section-sub-title">
+                        <h4>Check Your Favorite Insurance</h4>
+                    </div>
+                    <div class="section-main-title">
+                        <h2>Started Favorite Insurance </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row insurance">
+            <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tab insurance-list-tab">
+                            <ul class="tabs active">
+                                <li class="current"><a href="#">House Insurance</a></li>
+                                <li><a href="#">Medical Insurance</a></li>
+                                <li><a href="#">Medical Insurance</a></li>
+                            </ul>
+                            <div class="tab_content">
+                                <div class="tabs_item">
+                                    <div class="insurance-form">
+                                        <form action="https://formspree.io/f/myyleorq" method="POST" id="it-form">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="name">Your Full Name</label><br>
+                                                        <input type="text" id="name" name="name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="phone">Phone</label><br>
+                                                        <input type="text" id="phone" name="phone">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="email">Email Address *</label><br>
+                                                        <input type="text" id="email" name="email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="subject">Insurance Type</label><br>
+                                                        <input type="text" id="subject" name="subject">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="limit-title">
+                                                        <h4>Limite Of Balance</h4>
+                                                    </div>
+                                                    <div class="limit-baclance"></div>
+                                                    <div class="limit-value">
+                                                        <h4>Selected Value: 4000</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box-button">
+                                                        <button type="Submit">Get a Guote</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div id="status"></div>
+                                    </div>
+                                </div>
+                                <div class="tabs_item" style="display: none;">
+                                    <div class="insurance-form">
+                                        <form action="https://formspree.io/f/myyleorq" method="POST" id="ttime">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="fname">Your Full Name</label><br>
+                                                        <input type="text" id="fname" name="fname">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="numbar">Phone</label><br>
+                                                        <input type="text" id="numbar" name="number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="mail">Email Address *</label><br>
+                                                        <input type="text" id="mail" name="email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="option">Insurance Type</label><br>
+                                                        <input type="text" id="option">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="limit-title">
+                                                        <h4>Limite Of Balance</h4>
+                                                    </div>
+                                                    <div class="limit-baclance"></div>
+                                                    <div class="limit-value">
+                                                        <h4>Selected Value: 4000</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box-button">
+                                                        <button type="Submit">Get a Guote</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div id="post"></div>
+                                    </div>
+                                </div>
+                                <div class="tabs_item" style="display: none;">
+                                    <div class="insurance-form">
+                                        <form action="https://formspree.io/f/myyleorq" method="POST" id="tech-time">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="lname">Your Full Name</label><br>
+                                                        <input type="text" id="lname" name="lname">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="telephone">Phone</label><br>
+                                                        <input type="text" id="telephone" name="telephone">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="gmail">Email Address *</label><br>
+                                                        <input type="text" id="gmail" name="gmail">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box">
+                                                        <label for="choose">Insurance Type</label><br>
+                                                        <input type="text" id="choose" name="choose">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="limit-title">
+                                                        <h4>Limite Of Balance</h4>
+                                                    </div>
+                                                    <div class="limit-baclance"></div>
+                                                    <div class="limit-value">
+                                                        <h4>Selected Value: 4000</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="insurance-form-box-button">
+                                                        <button type="Submit">Get a Guote</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div id="POST"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="google-map wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+                    <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7496149.95373021!2d85.84621250756469!3d23.452185887261447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1635150422284!5m2!1sen!2sbd"
+                            width="1020" height="743" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==================================================-->
+<!-- End Insurance Area -->
+<!--==================================================-->
+
+<!--==================================================-->
+<!-- Start Testimonial Area -->
+<!--==================================================-->
+
+<!--==================================================-->
+<!-- End Testimonial Area -->
+<!--==================================================-->
+
+
+<!--==================================================-->
+<!-- Start Blog Area -->
+<!--==================================================-->
+<div class="blog-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <div class="section-sub-title">
+                        <h4>Check Your Favorite Insurance</h4>
+                    </div>
+                    <div class="section-main-title">
+                        <h2>latest updates & information</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-single-box wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+                    <div class="blog-content">
+                        <div class="blog-month">
+                            <h4>02</h4>
+                            <span>DEC</span>
+                        </div>
+                        <div class="blog-text">
+                            <h4><a href="blog-details.html">Earn good money and make</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        </div>
+                    </div>
+                    <div class="blog-thumb">
+                        <img src="{% static 'images/business/black-man-6320385_1280.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-single-box wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+                    <div class="blog-content">
+                        <div class="blog-month">
+                            <h4>05</h4>
+                            <span>DEC</span>
+                        </div>
+                        <div class="blog-text">
+                            <h4><a href="blog-details.html">Avenue money and make</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        </div>
+                    </div>
+                    <div class="blog-thumb">
+                        <img src="{% static 'images/business/black-man-black-suit-standing-cafe.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-single-box wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="blog-content">
+                        <div class="blog-month">
+                            <h4>07</h4>
+                            <span>DEC</span>
+                        </div>
+                        <div class="blog-text">
+                            <h4><a href="blog-details.html">Earn good money and make</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        </div>
+                    </div>
+                    <div class="blog-thumb">
+                        <img src="{% static 'images/business/black-men-cafe-have-business.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==================================================-->
+<!-- End Blog Area -->
+<!--==================================================-->
+
+
+<!--==================================================-->
+<!-- Start Sidebar Area -->
+<!--==================================================-->
+<div class="sidebar-group info-group">
+    <div class="sidebar-widget">
+        <div class="sidebar-widget-container">
+            <div class="widget-heading">
+                <a href="#" class="close-side-widget">
+                    <i class="bi bi-x-lg"></i>
+                </a>
+            </div>
+            <div class="sidebar-textwidget">
+                <div class="sidebar-info-contents">
+                    <div class="content-inner">
+                        <div class="sidebar-logo">
+                            <a href="#"><img src="{% static 'images/gslogo.png' %}" alt="logo"></a>
+                        </div>
+                        <div class="sidebar-widget-menu">
+                            <ul>
+                                <li class="dropdown"><a href="#" data-toggle="dropdown">Home</a>
+                                </li>
+                                <li class="dropdown"><a href="#" data-toggle="dropdown">About</a></li>
+                                <li class="dropdown"><a href="#" data-toggle="dropdown">Service ></a>
+                                </li>
+                                <li class="dropdown"><a href="#" data-toggle="dropdown">Blog </a>
+                                </li>
+                                <li class="dropdown"><a href="contact.html" data-toggle="dropdown">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="contact-info">
+                            <h2>Contact Info</h2>
+                            <ul class="list-style-one">
+                                <li><i class="bi bi-geo-alt-fill"></i>Ikeja, Lagos, Nigeria</li>
+                                <li><i class="bi bi-telephone-fill"></i>+1 470 519 3488</li>
+                                <li><i class="bi bi-envelope"></i> hello@globallifesavings.com</li>
+                                <li><i class="bi bi-alarm-fill"></i> Week Days: 08.00 to 10.00
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="social-box">
+                            <li class="facebook"><a href="#" class="fab fa-facebook-f"></a></li>
+                            <li class="twitter"><a href="#" class="fab fa-instagram"></a></li>
+                            <li class="linkedin"><a href="#" class="fab fa-twitter"></a></li>
+                            <li class="instagram"><a href="#" class="fab fa-pinterest-p"></a></li>
+                            <li class="youtube"><a href="#" class="fab fa-linkedin-in"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==================================================-->
+<!-- End Sidebar Area -->
+<!--==================================================-->
+<!--==================================================-->
+
+{% endblock %}
+
+

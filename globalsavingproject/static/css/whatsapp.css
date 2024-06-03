@@ -1,0 +1,207 @@
+/* Whatsapp Chat Widget Starts */
+
+
+.whatsapp-chat-icon{
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    z-index: 999;
+}
+.whatsapp-chat-icon a{
+
+    width: 50px;
+    height: 50px;
+    background: #25d366;
+    display: inline-block;
+    border-radius: 50%;
+}
+.whatsapp-chat-icon a i{
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: 41%;
+    transform: translateX(-50%) translateY(-41%);
+    color: #fff;
+}
+.whatsapp-tooltip {
+    position: absolute;
+    left: -120px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    max-width: 380px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    transition: visibility .1s,opacity .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.whatsapp-tooltip:before{
+    content: " ";
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -12px;
+    border: 6px solid;
+      border-top-color: currentcolor;
+      border-right-color: currentcolor;
+      border-bottom-color: currentcolor;
+      border-left-color: currentcolor;
+    position: absolute;
+    transform: rotate(-270deg);
+    border-color: transparent transparent #fff;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, .1));
+}
+
+
+.whatsapp-tooltip.show{
+    opacity: 1;
+    visibility: visible;
+}
+.whatsapp-widget-box {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgb(0 0 0 / 10%);
+    width: 380px;
+    bottom: 100px;
+    position: fixed;
+    right: 30px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+}
+.whatsapp-widget-box.show {
+    visibility: visible;
+    opacity: 1;
+}
+.widget-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 99;
+}
+.widget-close i {
+    font-size: 20px;
+    color: #fff;
+}
+.widget-user-header {
+    position: relative;
+    padding: 25px 45px 25px 25px;
+    background: #25d366;
+    display: flex;
+}
+.widget-user-photo {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.widget-user-photo:after {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    display: block;
+    width: 6px;
+    height: 6px;
+    content: "";
+    border: 2px solid #25d366;
+    border-radius: 50%;
+    background-color: #76f17b;
+}
+.widget-user-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.widget-user-desc {
+    margin-left: 15px;
+}
+.widget-user-name {
+    font-size: 14px;
+}
+.widget-user-status {
+    font-size: 13px;
+    font-weight: 300;
+}
+.widget-chat-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #f1f1f1 url(https://www.hairocraft.com/img/modalChatBackground.png) repeat;
+    background-size: contain;
+}
+.widget-chat-message {
+    max-width: 145px;
+    border-radius: 0 5px 5px 5px;
+    background-color: #fff;
+    align-self: flex-start;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+}
+
+.widget-chat-message:before{
+    position: absolute;
+    top: 0;
+    left: -11px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: "";
+    border-top: 11px solid #fff;
+    border-left: 11px solid transparent;
+}
+.widget-message-name {
+    font-size: 12px;
+    color: #9e9e9e;
+}
+.widget-message-text {
+    font-size: 14px;
+    line-height: 120%;
+    color: #212121;
+    white-space: pre-wrap;
+    margin: 10px 0;
+}
+.widget-message-time {
+    font-size: 12px;
+    color: #9e9e9e;
+    text-align: right;
+}
+.widget-chat-footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px 15px 3px;
+}
+
+.start-chat-btn {
+    background: #25d366;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    width: 100%;
+    border: none;
+    margin-bottom: 15px;
+    color: #000;
+}
+.start-chat-btn:hover{
+    text-decoration: none;
+    color: #000;
+}
+.start-chat-btn i {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+}
